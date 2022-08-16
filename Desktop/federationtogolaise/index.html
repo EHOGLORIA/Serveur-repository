@@ -1,0 +1,62 @@
+<!doctype html>
+  <html lang="fr">
+    <meta charset="UTF-8" />
+    <title>Films</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  </head>
+  <body>
+
+
+    
+    <input type="search" class="form-control" placeholder="Rechercher par titre" />
+
+    <section class="container mt-1">
+
+        <button class="btn btn-outline-primary" id="form-add">Ajouter un footballeur</button> <br>
+
+        <form action="javascript:void(0);" id="form" class="mt-4">
+          <div class="form-group">
+            <label for="title">Nom</label>
+            <input type="text" name="title" id="noms" class="form-control" required />
+          </div>
+          
+          <div class="form-group">
+            <label for="year">Nationalite</label>
+            <input type="text" name="year" id="nationalites" class="form-control" required />
+          </div>
+          <div class="form-group">
+            <label for="year">Club</label>
+            <input type="text" name="year" id="clubs" class="form-control" required />
+          </div>
+          <div class="form-group">
+            <label for="year">Experience</label>
+            <input type="number" name="year" id="experiences" class="form-control" required />
+          </div>
+
+          <input type="hidden" id="hidden" />
+          <button class="btn btn-xs btn-primary" id="form-save">Enregistrer</button>
+          <button class="btn btn-xs" id="form-cancel">Annuler</button>
+        </form>
+
+      <div id="content">
+        <h1 class="text-center">FEDERATION TOGOLAISE DE FOOTBALL</h1>
+        <table class="table table-bordered">
+          <thead class="thead-light">
+            <tr>
+              <th scope="col">Nom</th>
+              <th scope="col">Nationalite</th>
+              <th scope="col">Club</th>
+              <th scope="col">Experience</th>
+              <th scope="col">Action</th>
+            </tr>
+
+          </thead>
+          <tbody>
+          </tbody>
+        </table>
+      </div>
+    </section>
+  </body>
+  <script type="module" src="app.js"></script>
+
+</html>
